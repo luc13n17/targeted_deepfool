@@ -8,15 +8,20 @@ We encourage creating a virtual enviornment to run our code.
 
 ### Requirements
 
-torch==2.0.0+cu117
-torchaudio==2.0.1+cu117
-torchmetrics==0.11.4
-torchvision==0.15.1+cu117
+torch==2.0.0+cu117  
+
+torchaudio==2.0.1+cu117  
+
+torchmetrics==0.11.4  
+
+torchvision==0.15.1+cu117  
+
 matplotlib==3.7.1
 
 ### Dataset
 
-We used the **Imagenet2012 Validation Dataset**[[2]](https://arxiv.org/abs/1409.0575).
+We used the **Imagenet2012 Validation Dataset**[[1]](https://arxiv.org/abs/1409.0575).  
+
 After downloading, unzip the dataset in the `./data` directory
 
 ### Issues you might run into:
@@ -44,7 +49,7 @@ Save the gradcheck.py file and you should be good to go.
 
 ## deepfool.py
 
-This function implements the algorithm proposed in [[1]](http://arxiv.org/pdf/1511.04599) using PyTorch to find adversarial perturbations.
+This function implements the algorithm proposed in [[2]](http://arxiv.org/pdf/1511.04599) using PyTorch to find adversarial perturbations.
 
 **Note**: The final softmax (loss) layer should be removed in order to prevent numerical instabilities.
 
@@ -83,7 +88,7 @@ This file contains the code to reproduce our experiments.
 
 ## Reference
 
-[1] S. Moosavi-Dezfooli, A. Fawzi, P. Frossard:
-_DeepFool: a simple and accurate method to fool deep neural networks_. In Computer Vision and Pattern Recognition (CVPR ’16), IEEE, 2016.
+[1] Olga Russakovsky*, Jia Deng*, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei. (\* = equal contribution) ImageNet Large Scale Visual Recognition Challenge. arXiv:1409.0575, 2014.
 
-[2] Olga Russakovsky*, Jia Deng*, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei. (\* = equal contribution) ImageNet Large Scale Visual Recognition Challenge. arXiv:1409.0575, 2014.
+[2] S. Moosavi-Dezfooli, A. Fawzi, P. Frossard:
+_DeepFool: a simple and accurate method to fool deep neural networks_. In Computer Vision and Pattern Recognition (CVPR ’16), IEEE, 2016.
