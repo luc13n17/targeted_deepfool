@@ -1,0 +1,1 @@
+This folder contains the true labels for the imagenet validation dataset and the validation dataset should be unzipped here after downloading.

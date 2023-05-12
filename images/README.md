@@ -1,0 +1,1 @@
+This folder contains some images for test purpose.
